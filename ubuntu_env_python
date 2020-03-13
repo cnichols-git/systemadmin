@@ -1,0 +1,7 @@
+When you need a newer verion of python to be recognized on an Ubuntu install do the following
+
+sudo update-alternatives --config python
+Will show you an error:
+
+update-alternatives: error: no alternatives for python3 
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1

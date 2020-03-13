@@ -1,0 +1,38 @@
+chris@office:~/git/sysadmin$ w
+ 11:07:09 up 2 days, 15:43,  1 user,  load average: 0.48, 0.23, 0.28
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+chris    :1       :1               Thu21   ?xdm?   7:05m  0.00s /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubunt
+
+# TTY - TeleTYpewriter
+# pts - pseudo terminal
+
+chris@office:~/git/sysadmin$ who
+chris    :1           2019-12-05 21:02 (:1)
+
+## network stuff ##
+
+netstat -tulpn
+- dispaly list of connections and ports used
+
+
+## STDIN, STDOUT and STDERR ##
+STDOUT --> 0
+STDOUT --> 1
+STDERR --> 2
+
+write to a file
+- echo "hello" > newfile.txt
+
+add to a file
+echo "world" >> newfile.txt
+
+clober - >
+append - >>
+
+ls -alh FileThatDoesNotExist.txt >> append new line
+- this will error out
+
+ls -alh FileThatDoesNotExist.txt 2> err.txt
+- this will create a file and add the error output
+
+
